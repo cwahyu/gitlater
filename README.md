@@ -22,7 +22,7 @@ But **when** you do it.
 
 > “This is the time I work on this project. Not now.”
 
-## Features (v0.1.1)
+## Features (v0.1.2)
 
 - simple time-based commit guard
 - two modes:
