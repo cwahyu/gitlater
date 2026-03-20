@@ -1,0 +1,14 @@
+[project]
+name = "gitlater"
+version = "0.1.0"
+description = "Respect your time boundaries in git workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gitlater = "gitlater.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

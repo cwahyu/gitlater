@@ -1,0 +1,5 @@
+mode = "personal"
+
+[work_hours]
+start = 9
+end = 18
