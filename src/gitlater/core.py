@@ -1,7 +1,6 @@
 # src/gitlater/core.py
 
 from datetime import datetime, time
-from pathlib import Path
 
 from gitlater.config import load_config
 from gitlater.holidays import load_holidays
