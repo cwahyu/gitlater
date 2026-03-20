@@ -1,7 +1,8 @@
 # tests/test_init.py
 
-from gitlater.init import run_init
 from pathlib import Path
+
+from gitlater.init import run_init
 
 
 def test_init_creates_files(tmp_path, monkeypatch):

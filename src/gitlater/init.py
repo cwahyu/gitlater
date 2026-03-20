@@ -2,7 +2,6 @@
 
 from pathlib import Path
 
-
 CONFIG_DIR = Path(".gitlater")
 CONFIG_FILE = CONFIG_DIR / "config.toml"
 HOLIDAY_FILE = CONFIG_DIR / "holidays.txt"

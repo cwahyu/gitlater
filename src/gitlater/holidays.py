@@ -2,7 +2,6 @@
 
 from pathlib import Path
 
-
 HOLIDAY_FILE = Path(".gitlater") / "holidays.txt"
 
 

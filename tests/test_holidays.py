@@ -1,7 +1,8 @@
 # tests/test_holidays.py
 
-from gitlater.holidays import load_holidays
 from pathlib import Path
+
+from gitlater.holidays import load_holidays
 
 
 def test_load_holidays_basic(tmp_path, monkeypatch):

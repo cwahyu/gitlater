@@ -1,8 +1,9 @@
 # tests/test_core.py
 
 from datetime import datetime
+
 from gitlater import core
-from gitlater.core import is_allowed, next_allowed_time, build_block_message, get_status
+from gitlater.core import build_block_message, get_status, is_allowed, next_allowed_time
 
 
 def test_personal_allows_outside_working_hours():

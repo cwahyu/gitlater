@@ -1,7 +1,8 @@
 # tests/test_config.py
 
-from gitlater.config import load_config
 from pathlib import Path
+
+from gitlater.config import load_config
 
 
 def test_default_config_when_missing(tmp_path, monkeypatch):

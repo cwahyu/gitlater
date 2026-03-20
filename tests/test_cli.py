@@ -1,8 +1,9 @@
 # tests/test_cli.py
 
-from gitlater.cli import main
 import subprocess
 import sys
+
+from gitlater.cli import main
 
 
 def test_cli_no_args(monkeypatch, capsys):

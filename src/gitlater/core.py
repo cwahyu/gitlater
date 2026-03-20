@@ -5,7 +5,6 @@ from datetime import datetime, time, timedelta
 from gitlater.config import load_config
 from gitlater.holidays import load_holidays
 
-
 # ---------- Core Logic ----------
 
 
