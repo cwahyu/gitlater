@@ -115,6 +115,7 @@ def build_block_message(now: datetime, mode: str, start: int, end: int) -> str:
     lines.append(f"⏳ Next window: {next_allowed_time(now, start, end)}")
     return "\n".join([lines[0], "", *lines[1:]])
 
+
 def next_allowed_time(now: datetime, start: int, end: int) -> str:
     today_start = datetime.combine(now.date(), time(start, 0))
     today_end = datetime.combine(now.date(), time(end, 0))
