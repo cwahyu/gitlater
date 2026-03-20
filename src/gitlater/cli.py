@@ -3,6 +3,7 @@
 import sys
 
 from gitlater.core import check_allowed, get_status
+from gitlater.init import run_init
 
 
 def main() -> None:
@@ -27,6 +28,10 @@ def main() -> None:
 
     elif cmd == "status":
         print(get_status())
+        sys.exit(0)
+
+    elif cmd == "init":
+        run_init()
         sys.exit(0)
 
     else:

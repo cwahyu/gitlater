@@ -105,17 +105,15 @@ def build_block_message(now: datetime, mode: str, start: int, end: int) -> str:
     lines = []
 
     if mode == "personal":
-        lines.append("🌙 Not now — this time is protected.")
+        lines.append("🌙 Not now — this time is yours.")
     elif mode == "work":
         lines.append("⛔ Outside working window.")
     else:
         lines.append("⛔ Not allowed at this time.")
 
     lines.append(f"🗓 {now.strftime('%A')} • {now.strftime('%H:%M')}")
-    lines.append(f"⏳ Next allowed: {next_allowed_time(now, start, end)}")
-
-    return "\n".join(lines)
-
+    lines.append(f"⏳ Next window: {next_allowed_time(now, start, end)}")
+    return "\n".join([lines[0], "", *lines[1:]])
 
 def next_allowed_time(now: datetime, start: int, end: int) -> str:
     today_start = datetime.combine(now.date(), time(start, 0))
