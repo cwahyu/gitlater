@@ -18,11 +18,11 @@ Sometimes the problem is not:
 
 But **when** you do it.
 
-`gitlater` helps you define:
+`gitlater` helps you say:
 
 > “This is the time I work on this project. Not now.”
 
-## Features (v0.1.0)
+## Features (v0.1.1)
 
 - simple time-based commit guard
 - two modes:
@@ -34,13 +34,19 @@ But **when** you do it.
 
 ## Installation
 
-Using `uv`:
+### Using pipx (recommended)
+
+```bash
+pipx install gitlater
+```
+
+### Using uv
 
 ```bash
 uv tool install gitlater
 ```
 
-Or locally:
+### Local development
 
 ```bash
 uv sync
@@ -120,8 +126,6 @@ gitlater is intentionally simple.
 - no global config
 
 It doesn’t decide your schedule.
-
-You define your boundaries.
 
 ## Roadmap
 
