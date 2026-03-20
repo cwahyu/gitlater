@@ -16,6 +16,7 @@ htmlcov/
 
 # local
 .DS_Store
+.gitlater
 .pre-commit-personal.yaml
 local/
 scripts/
