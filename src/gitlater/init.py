@@ -1,3 +1,5 @@
+# src/gitlater/init.py
+
 from pathlib import Path
 
 
