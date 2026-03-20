@@ -100,7 +100,10 @@ Add to your local pre-commit config:
       entry: gitlater check
       language: system
       stages: [pre-commit]
+      pass_filenames: false
 ```
+
+`pass_filenames: false` ensures the check runs once (not per file).
 
 ## Usage
 
