@@ -4,11 +4,8 @@ version = "0.1.2"
 description = "Respect your time boundaries in git workflows"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
 authors = [{ name = "Catur Wahyu" }]
-
 keywords = ["git", "cli", "pre-commit", "productivity", "time-management"]
-
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -23,8 +20,10 @@ classifiers = [
     "Topic :: Software Development :: Version Control :: Git",
     "Topic :: Utilities",
 ]
-
 dependencies = []
+
+[project.license]
+text = "MIT"
 
 [project.urls]
 Homepage = "https://github.com/cwahyu/gitlater"
@@ -39,4 +38,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = ["pre-commit>=4.5.1", "pytest>=9.0.2"]
+dev = ["pre-commit>=4.5.1", "pytest>=9.0.2", "pytest-cov>=7.0.0"]
