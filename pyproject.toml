@@ -1,6 +1,6 @@
 [project]
 name = "gitlater"
-version = "0.1.0"
+version = "0.1.1"
 description = "Respect your time boundaries in git workflows"
 readme = "README.md"
 requires-python = ">=3.10"
