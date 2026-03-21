@@ -31,11 +31,8 @@ repos:
         language: system
         pass_filenames: false
 
-  - repo: local
+  - repo: https://github.com/cwahyu/gitlater
+    rev: v0.1.4
     hooks:
-      - id: gitlater
-        name: git later
-        entry: gitlater check
-        language: system
-        stages: [pre-commit]
+      - id: gitlater-check
         pass_filenames: false
