@@ -1,5 +1,5 @@
-- id: gitlater
-  name: gitlater CLI
-  entry: gitlater
+- id: gitlater-check
+  name: gitlater check
+  entry: gitlater check
   language: python
-  types: [python]
+  pass_filenames: false
