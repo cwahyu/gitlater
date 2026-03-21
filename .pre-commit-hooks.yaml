@@ -1,0 +1,5 @@
+- id: gitlater
+  name: gitlater CLI
+  entry: gitlater
+  language: python
+  types: [python]
