@@ -1,9 +1,3 @@
-- id: gitlater
-  name: gitlater (legacy)
-  entry: gitlater check
-  language: python
-  pass_filenames: false
-
 - id: gitlater-check
   name: gitlater (check)
   entry: gitlater check
