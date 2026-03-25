@@ -1,10 +1,13 @@
 # gitlater
 
-Respect your time boundaries in git workflows.
+Respect your time boundaries.
 
 ## What is this?
 
-`gitlater` is a small CLI tool that helps you **commit at the right time**.
+`gitlater` is a small tool that helps you **do things at the right time**.
+
+Originally built for git commits, it now works anywhere —
+CLI, pre-commit, or inside your Python scripts.
 
 It doesn’t optimize productivity.
 It protects your boundaries.
@@ -15,12 +18,13 @@ Sometimes the problem is not:
 
 - writing code
 - committing code
+- running scripts
 
 But **when** you do it.
 
 `gitlater` helps you say:
 
-> “This is the time I work on this project. Not now.”
+> “Not now. This can wait.”
 
 ## Features
 
@@ -34,16 +38,22 @@ But **when** you do it.
 
 ## Installation
 
-### Using pipx (recommended)
+### Using pipx (recommended for CLI)
 
 ```bash
 pipx install gitlater
 ```
 
-### Using uv
+### Using uv (CLI tool)
 
 ```bash
 uv tool install gitlater
+```
+
+### Using uv (Python dependency)
+
+```bash
+uv add gitlater
 ```
 
 ### Local development
@@ -119,6 +129,53 @@ Example:
 🗓 Friday • 10:08
 ⏳ Next window: 18:00
 ```
+
+## Using in Python scripts
+
+`gitlater` can also be used directly inside Python scripts.
+
+### Basic check
+
+```python
+from gitlater import allow
+
+if not allow():
+    print("Skip execution")
+    exit()
+
+# run your logic
+print("Running task...")
+```
+
+### Get status message
+
+```python
+from gitlater import status
+
+allowed, message = status()
+
+if not allowed:
+    print(message)
+else:
+    print("Running task...")
+```
+
+### Enforce (exit automatically)
+
+```python
+from gitlater import guard
+
+guard()
+
+# only runs if allowed
+print("Running task...")
+```
+
+### Notes
+
+- Uses the same .gitlater/ configuration as the CLI
+- Behavior depends on the current working directory
+- No external dependencies required
 
 ## Philosophy
 

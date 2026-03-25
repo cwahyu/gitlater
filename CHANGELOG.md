@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.2.0
+
+- add embed mode API:
+  - `allow()` → boolean check
+  - `status()` → returns (allowed, message)
+  - `guard()` → enforce and exit
+
+This allows gitlater to be used directly in Python scripts,
+not only as a CLI or pre-commit hook.
+
 ## v0.1.3
 
 - add pre-commit hooks
