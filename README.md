@@ -1,13 +1,13 @@
 # gitlater
 
-Respect your time boundaries.
+Not now. Later.
 
 ## What is this?
 
 `gitlater` is a small tool that helps you **do things at the right time**.
 
-Originally built for git commits, it now works anywhere —
-CLI, pre-commit, or inside your Python scripts.
+It started with git commits.
+Now it works anywhere — CLI, pre-commit, or inside your Python scripts.
 
 It doesn’t optimize productivity.
 It protects your boundaries.
@@ -24,7 +24,7 @@ But **when** you do it.
 
 `gitlater` helps you say:
 
-> “Not now. This can wait.”
+> Not now. Later.”
 
 ## Features
 
@@ -37,12 +37,6 @@ But **when** you do it.
 - zero external dependencies
 
 ## Installation
-
-### Using pipx (recommended for CLI)
-
-```bash
-pipx install gitlater
-```
 
 ### Using uv (CLI tool)
 
