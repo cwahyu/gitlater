@@ -4,10 +4,15 @@ import sys
 
 from gitlater.core import check_allowed, get_status
 from gitlater.init import run_init
+from gitlater.version import get_version
 
 
 def main() -> None:
     args = sys.argv[1:]
+
+    if "--version" in args:
+        print(f"gitlater {get_version()}")
+        return
 
     if not args:
         print("gitlater: missing command")
