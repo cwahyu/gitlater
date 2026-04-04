@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.2.1
+
+- add `gitlater --version` to display installed version
+
 ## v0.2.0
 
 - add embed mode API:
